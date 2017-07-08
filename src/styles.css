@@ -1,1 +1,54 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 /* You can add global styles to this file, and also import other style files */
+/*
+1. nike-technicolor
+1. chicago-skyline
+1. women-walking-chicago--needs resize
+*/
+@media (max-width: 767px) {
+  body {
+    background-image: url("./assets/hunter-johnson-219349-nike-technicolor_iphone.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646
+  }
+
+  .overlay {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(0,0,0,0.4);
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/hunter-johnson-219349-nike-technicolor_med.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .overlay {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+  }
+}
+
+html {
+  margin: 0px;
+  height: 100vh;
+  min-height: 100%;
+}

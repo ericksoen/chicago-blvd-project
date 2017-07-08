@@ -1,0 +1,57 @@
+h1, p {
+  font-family: Poppins;
+  color: #DCDBDB;
+}
+
+.mat-input-underline /deep/ {
+  height: 10px;
+  background-color: #38A552;
+}
+@media (max-width: 767px) {
+  .route-map {
+    background-image: url(/../assets/blvd-map-best-start-finish-park-names-small.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    width: 200px;
+    alt: "Course map";
+  }
+
+  h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1.0em;
+    font-weight: bold;
+  }
+}
+@media(min-width: 768px) {
+  .route-map {
+    background-image: url(/../assets/blvd-map-best-start-finish-park-names.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 400px;
+    alt: "Course map";
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+nav {
+  height: 40px;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.run-details, .user-signup {
+  margin: 20px;
+}
+
+.long-input {
+  width: 250px;
+}

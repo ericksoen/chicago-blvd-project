@@ -1,3 +1,37 @@
-<h1>
-  {{title}}
-</h1>
+<div >
+  <nav>
+    <a class="btn btn-lg btn-social-icon" href="https://twitter.com/ChiBlvdProject">
+      <span class="fa fa-twitter fa-2x"></span>
+    </a>
+    <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/ChiBlvdProject/">
+      <span class="fa fa-facebook fa-2x"></span>
+    </a>
+  </nav>
+</div>
+<div class="run-details">
+  <h1>
+    Chicago Boulevard Project
+  </h1>
+  <div>
+    <p>Run as an individual or on a relay team</p>
+    <div class="route-map" ></div>
+    <p>Date to be determined</p>
+    <p>Enter your email to receive project updates</p>
+  </div>
+</div>
+<div class="user-signup">
+  <form>
+    <md-input-container>
+      <input class="long-input" mdInput placeholder="email" [formControl]="emailFormControl" [(ngModel)]="email" name="email">
+      <md-error *ngIf="emailFormControl.hasError('required')">
+        This field is required
+      </md-error>
+      <md-error *ngIf="emailFormControl.hasError('pattern')">
+        Please enter a valid email address
+      </md-error>
+    </md-input-container>
+    <!--<button md-raised-button (click)="submitEmail()">Signup</button>-->
+    <button type="button" class="btn btn-success" [disabled]="!emailFormControl.valid" (click)="submitEmail()">Join</button>
+    <p *ngIf="isEmailSuccess">Thanks for your interest! We'll be in touch soon.</p>
+  </form>
+</div>
