@@ -3,10 +3,18 @@ h1, p {
   color: #DCDBDB;
 }
 
-.mat-input-underline /deep/ {
-  height: 10px;
-  background-color: #38A552;
+
+/* Handle yellow auto-fill behavior in Chrome */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
 }
+
+/deep/ .mat-input-placeholder {
+  color: #fff;
+  font-size: 2em;
+}
+
 @media (max-width: 767px) {
   .route-map {
     background-image: url(/../assets/blvd-map-best-start-finish-park-names-small.png);

@@ -3,7 +3,7 @@ import { SignupService } from './core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router, NavigationEnd } from '@angular/router';
 
-declare let ga: Function;
+declare const ga: Function;
 const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 @Component({

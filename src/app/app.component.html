@@ -22,7 +22,7 @@
 <div class="user-signup">
   <form>
     <md-input-container>
-      <input class="long-input" mdInput placeholder="email" [formControl]="emailFormControl" [(ngModel)]="email" name="email">
+      <input class="long-input" mdInput placeholder="Email" [formControl]="emailFormControl" [(ngModel)]="email" name="email">
       <md-error *ngIf="emailFormControl.hasError('required')">
         This field is required
       </md-error>
@@ -30,8 +30,7 @@
         Please enter a valid email address
       </md-error>
     </md-input-container>
-    <!--<button md-raised-button (click)="submitEmail()">Signup</button>-->
-    <button type="button" class="btn btn-success" [disabled]="!emailFormControl.valid" (click)="submitEmail()">Join</button>
+    <button md-fab color="primary" [disabled]="!emailFormControl.valid" (click)="submitEmail()">Join</button>
     <p *ngIf="isEmailSuccess">Thanks for your interest! We'll be in touch soon.</p>
   </form>
 </div>
