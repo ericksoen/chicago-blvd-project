@@ -8,7 +8,7 @@
 */
 @media (max-width: 767px) {
   body {
-    background-image: url("./assets/hunter-johnson-219349-nike-technicolor_iphone.jpg");
+    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_iphone.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,7 +28,7 @@
 
 @media (min-width: 768px) {
   body {
-    background-image: url("./assets/hunter-johnson-219349-nike-technicolor_med.jpg");
+    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_med.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
