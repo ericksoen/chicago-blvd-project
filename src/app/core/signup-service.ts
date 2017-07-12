@@ -2,6 +2,7 @@ import { Http, Response } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { ErrorHandlerService } from './error-handler-service';
+import { environment } from './../../environments/environment';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -15,6 +16,6 @@ export class SignupService {
   public AddEmail(emailAddress: string): Observable<any> {
 
     const message = {text: emailAddress};
-    return this.http.post('https://hooks.slack.com/services/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', JSON.stringify(message));
+    return this.http.post(environment.slackWebhookUrl, JSON.stringify(message));
   }
 }

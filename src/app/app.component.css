@@ -1,11 +1,10 @@
-h1, p {
+h1, li, p {
   font-family: Poppins;
   color: #DCDBDB;
 }
 
-
-.run-details, .user-signup {
-    margin: 20px;
+h1 {
+  text-align: left;
 }
 
 /* Handle yellow auto-fill behavior in Chrome */
@@ -22,45 +21,80 @@ input:-webkit-autofill {
 /deep/ button.mat-fab.mat-primary {
   color: #fff;
 }
-
 /deep/ button.mat-fab.mat-primary[disabled] {
   color: #fff;
-  background-color: lightgray;
 }
 @media (max-width: 767px) {
   .route-map {
-    background-image: url(./../resources/blvd-map-best-start-finish-park-names-small.png);
+    background-image: url(./../resources/blvd-map-best-start-finish-park-names-small-min.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     alt: "Course map";
+    margin: 10px;
   }
 
   h1 {
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: bold;
   }
-  p {
-    font-size: 1.0em;
-    font-weight: bold;
+  li {
+    list-style-image: url("./../resources/western-star-clip-art-clipart-red-star-d2db-18px.png");
     margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
   }
-}
-@media(min-width: 768px) {
-  .route-map {
-    background-image: url(./../resources/blvd-map-best-start-finish-park-names.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 400px;
-    width: 400px;
-    alt: "Course map";
+
+  .run-details, .user-signup {
+      margin: 10px;
   }
 
   p {
     font-size: 1.2em;
     font-weight: bold;
-    margin-top: 5px;
+  }
+ }
+@media(min-width: 768px) {
+
+  .route-map {
+    background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+    alt: "Course map";
+    margin: 20px;
+
+  }
+
+  li {
+    list-style-image: url("./../resources/western-star-clip-art-clipart-red-star-d2db-18px.png");
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  div:first-child {
+    flex: 1;
+  }
+
+  div:nth-of-type(2) {
+    align-items: center;
+    flex: 3;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .run-details, .user-signup {
+      margin: 20px;
   }
 }
 

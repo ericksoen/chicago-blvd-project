@@ -8,7 +8,7 @@
 */
 @media (max-width: 767px) {
   body {
-    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_iphone.jpg");
+    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_iphone-min.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,14 +21,14 @@
     width: 100%;
     height: 100%;
     padding: 0;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(49, 99, 178, 0.30);
     position: relative;
   }
 }
 
 @media (min-width: 768px) {
   body {
-    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_med.jpg");
+    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_med-min.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,7 +41,7 @@
     width: 100%;
     height: 100%;
     padding: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(49, 99, 178, 0.30);
     position: fixed;
   }
 }

@@ -8,30 +8,30 @@
     </a>
   </nav>
 </div>
-<div class="run-details">
-  <h1>
-    The Chicago Boulevard Project
-  </h1>
-  <div>
-    <p>A 50K run on historic boulevards from Jackson Park to Logan Square</p>
-    <p>Run as an individual, on a relay team, or join up for your neighborhood</p>
-    <div class="route-map" ></div>
-    <p>Date to be determined</p>
-    <p>Enter your email to receive project updates</p>
+<h1>
+  The Chicago Boulevard Project
+</h1>
+<div class="flex">
+  <div class="route-map"></div>
+  <div class="run-details">
+    <ul>
+      <li>A 50K run on historic boulevards from Jackson Park to Logan Square</li>
+      <li>Run as an individual, on a relay team, or join up for your neighborhood</li>
+      <li>Date to be determined</li>
+      <li>Enter your email to receive project updates</li>
+    </ul>
+    <form class="user-signup">
+      <md-input-container>
+        <input class="long-input" mdInput placeholder="Email" [formControl]="emailFormControl" [(ngModel)]="email" name="email">
+        <md-error *ngIf="emailFormControl.hasError('required')">
+          This field is required
+        </md-error>
+        <md-error *ngIf="emailFormControl.hasError('pattern')">
+          Please enter a valid email address
+        </md-error>
+      </md-input-container>
+      <button md-fab color="primary" [disabled]="!emailFormControl.valid" (click)="submitEmail()">Join</button>
+      <p *ngIf="isEmailSuccess">Thanks for your interest! We'll be in touch soon.</p>
+    </form>
   </div>
-</div>
-<div class="user-signup">
-  <form>
-    <md-input-container>
-      <input class="long-input" mdInput placeholder="Email" [formControl]="emailFormControl" [(ngModel)]="email" name="email">
-      <md-error *ngIf="emailFormControl.hasError('required')">
-        This field is required
-      </md-error>
-      <md-error *ngIf="emailFormControl.hasError('pattern')">
-        Please enter a valid email address
-      </md-error>
-    </md-input-container>
-    <button md-fab color="primary" [disabled]="!emailFormControl.valid" (click)="submitEmail()">Join</button>
-    <p *ngIf="isEmailSuccess">Thanks for your interest! We'll be in touch soon.</p>
-  </form>
 </div>
