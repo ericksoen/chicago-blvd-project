@@ -4,7 +4,7 @@ h1, li, p {
 }
 
 h1 {
-  text-align: left;
+  color: #337ab7;
 }
 
 /* Handle yellow auto-fill behavior in Chrome */
@@ -18,55 +18,94 @@ input:-webkit-autofill {
   font-size: 2em;
 }
 
+/deep/ .mat-input-element {
+  font-size: 4em;
+}
+
 /deep/ button.mat-fab.mat-primary {
   color: #fff;
 }
 /deep/ button.mat-fab.mat-primary[disabled] {
   color: #fff;
+  background-color: rgba(143,145,147, 0.6);
 }
+
 @media (max-width: 767px) {
-  .route-map {
-    background-image: url(./../resources/blvd-map-best-start-finish-park-names-small-min.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 300px;
-    width: 300px;
-    alt: "Course map";
-    margin: 10px;
+  .content {
+    overflow: auto;
+    position: absolute;
+    z-index: 1;
+  }
+  h1 {
+   margin-top: 10px;
+   margin-left: 20px;
+   font-size: 1.8em;
   }
 
-  h1 {
-    font-size: 1.8em;
-    font-weight: bold;
+  .info {
+    height: 40px;
+    text-align: left;
+    margin-bottom: 0px;
+    background-color: #FFF;
   }
+
   li {
     list-style-image: url("./../resources/western-star-clip-art-clipart-red-star-d2db-18px.png");
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
     font-weight: bold;
   }
 
   .run-details, .user-signup {
-      margin: 10px;
+      margin: 20px;
   }
 
-  p {
-    font-size: 1.2em;
-    font-weight: bold;
+  .flex-header {
+    display: flex;
+    flex-direction: row;
   }
- }
+
+  .flex-header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    flex: 9;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .route-map {
+    background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 550px;
+    width: 550px;
+    alt: "Course map";
+  }
+
+  .flex .route-map {
+    align-self: center;
+  }
+}
 @media(min-width: 768px) {
 
   .route-map {
     background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
     background-repeat: no-repeat;
     background-size: contain;
-    height: 500px;
-    width: 500px;
+    background-position: center;
+    height: 550px;
+    width: 550px;
     alt: "Course map";
-    margin: 20px;
-
+    margin-top: 50px;
   }
 
   li {
@@ -77,33 +116,99 @@ input:-webkit-autofill {
     font-weight: bold;
   }
 
-  p {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  div:first-child {
-    flex: 1;
-  }
-
-  div:nth-of-type(2) {
-    align-items: center;
-    flex: 3;
-  }
   .flex {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
   }
+
+  .flex .flex-details {
+    flex: 4;
+    align-self: center;
+  }
+
+  .flex .route-map {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 5px;
+    flex: 9;
+  }
+
+  .flex-header nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    flex: 2;
+    margin-top: 5px;
+
+  }
+
+  .flex-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-details li {
+    flex: 1;
+  }
+
+  .flex-details form {
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+  }
+
   .run-details, .user-signup {
       margin: 20px;
   }
+
+  h1 {
+    margin-left: 30px;
+    text-align: left;
+    color: #337ab7;
+    height: 60px;
+    margin: 0px;
+  }
+
+  .info {
+    height: 75px;
+    text-align: left;
+    margin-bottom: 0px;
+    background-color: #FFF;
+  }
+
+  footer {
+    font-family: Poppins;
+    color: #337ab7;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    text-align: right;
+    margin-bottom: 0px;
+    background-color: #FFF;
+  }
 }
 
-nav {
-  height: 40px;
-  text-align: left;
-  margin-top: 5px;
-}
+
 
 .long-input {
-  width: 250px;
+  width: 400px;
 }

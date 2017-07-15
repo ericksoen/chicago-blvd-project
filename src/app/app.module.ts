@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core';
 
 const appRoutes: Routes = [
-   { path: '**', component: AppComponent }
+   { path: '', component: AppComponent },
+   { path: '**', redirectTo: ''}
 ]
 
 @NgModule({

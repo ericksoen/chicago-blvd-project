@@ -1,34 +1,8 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-/* You can add global styles to this file, and also import other style files */
-/*
-1. nike-technicolor
-1. chicago-skyline
-1. women-walking-chicago--needs resize
-*/
 @media (max-width: 767px) {
   body {
-    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_iphone-min.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #464646
-  }
-
-  .overlay {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background-color: rgba(49, 99, 178, 0.30);
-    position: relative;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background-image: url("./resources/hunter-johnson-219349-nike-technicolor_med-min.jpg");
+    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline_497px.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,7 +15,27 @@
     width: 100%;
     height: 100%;
     padding: 0;
-    background-color: rgba(49, 99, 178, 0.30);
+    background-color: rgba(49, 99, 178, 0.80);
+    position: fixed;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+
+  .overlay {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(49, 99, 178, 0.80);
     position: fixed;
   }
 }
