@@ -32,9 +32,8 @@ input:-webkit-autofill {
 
 @media (max-width: 767px) {
   .content {
-    overflow: auto;
     position: absolute;
-    z-index: 1;
+    height: 100%;
   }
   h1 {
    margin-top: 10px;
@@ -95,6 +94,8 @@ input:-webkit-autofill {
     align-self: center;
   }
 }
+
+
 @media(min-width: 768px) {
 
   .route-map {
