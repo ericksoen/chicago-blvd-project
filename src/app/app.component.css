@@ -1,18 +1,3 @@
-h1, li, p {
-  font-family: Poppins;
-  color: #DCDBDB;
-}
-
-h1 {
-  color: #337ab7;
-}
-
-/* Handle yellow auto-fill behavior in Chrome */
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px white inset;
-  box-shadow: 0 0 0px 1000px white inset;
-}
-
 /deep/ .mat-input-placeholder {
   color: #fff;
   font-size: 2em;
@@ -30,19 +15,47 @@ input:-webkit-autofill {
   background-color: rgba(143,145,147, 0.6);
 }
 
-@media (max-width: 767px) {
+h1, li, p {
+  font-family: Poppins;
+  color: #DCDBDB;
+}
+
+h1 {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.info {
+  background-color: #FFF;
+}
+
+.route-map {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  alt: "Course map";
+}
+
+/* Handle yellow auto-fill behavior in Chrome */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+}
+
+@media only screen and (min-width: 300px) {
   .content {
     position: absolute;
     height: 100%;
+    width: 100%;
   }
   h1 {
    margin-top: 10px;
    margin-left: 20px;
-   font-size: 1.8em;
+   font-size: 1.2em;
   }
 
   .info {
-    height: 40px;
+    height: 60px;
     text-align: left;
     margin-bottom: 0px;
     background-color: #FFF;
@@ -50,8 +63,8 @@ input:-webkit-autofill {
 
   li {
     list-style-image: url("./../resources/western-star-clip-art-clipart-red-star-d2db-18px.png");
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 1.1em;
     font-weight: bold;
   }
@@ -73,6 +86,10 @@ input:-webkit-autofill {
     flex: 9;
   }
 
+  .flex-header nav {
+    margin-top: 10px;
+  }
+
   .flex {
     display: flex;
     flex-direction: column;
@@ -82,30 +99,103 @@ input:-webkit-autofill {
 
   .route-map {
     background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 550px;
-    width: 550px;
+    height: 250px;
+    width: 250px;
     alt: "Course map";
   }
 
   .flex .route-map {
     align-self: center;
   }
+
+  .long-input {
+    width: 175px;
+  }
 }
 
+@media only screen and (min-width: 480px) {
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+   margin-top: 10px;
+   margin-left: 20px;
+   font-size: 1.2em;
+  }
 
-@media(min-width: 768px) {
+  .info {
+    height: 60px;
+    text-align: left;
+    margin-bottom: 0px;
+    background-color: #FFF;
+  }
+
+  li {
+    list-style-image: url("./../resources/western-star-clip-art-clipart-red-star-d2db-18px.png");
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  .run-details, .user-signup {
+      margin: 20px;
+  }
+
+  .flex-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    flex: 9;
+  }
+
+  .flex-header nav {
+    margin-top: 10px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
 
   .route-map {
     background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    height: 500px;
+    width: 500px;
+    alt: "Course map";
+  }
+
+  .flex .route-map {
+    align-self: center;
+  }
+
+  .long-input {
+    width: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .route-map {
+    background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
     height: 550px;
     width: 550px;
-    alt: "Course map";
     margin-top: 50px;
   }
 
@@ -190,26 +280,9 @@ input:-webkit-autofill {
     height: 75px;
     text-align: left;
     margin-bottom: 0px;
-    background-color: #FFF;
   }
 
-  footer {
-    font-family: Poppins;
-    color: #337ab7;
-    font-size: 18px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 20px;
-    text-align: right;
-    margin-bottom: 0px;
-    background-color: #FFF;
+  .long-input {
+    width: 400px;
   }
-}
-
-
-
-.long-input {
-  width: 400px;
 }

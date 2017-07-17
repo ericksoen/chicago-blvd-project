@@ -1,8 +1,10 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-@media (max-width: 767px) {
+
+@media (min-width: 300px)
+{
    body {
-    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline_497px.jpg");
+    background-image: url("./resources/ferdinand-stohr-176623-chicago-skyline_2000px.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,15 +17,37 @@
     width: 100%;
     height: 100%;
     padding: 0;
-    background-color: rgba(49, 99, 178, 0.80);
+    background-color: rgba(49, 99, 178, 0.70);
     position: absolute;
-    overflow: scroll;
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 480px)
+{
+   body {
+    background-image: url("./resources/ferdinand-stohr-176623-chicago-skyline_2000px.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+  }
+
+   .overlay {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(49, 99, 178, 0.70);
+    position: absolute;
+    overflow-y: scroll;
   }
 }
 
 @media (min-width: 768px) {
   body {
-    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline.jpg");
+    background-image: url("./resources/ferdinand-stohr-176623-chicago-skyline.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -40,12 +64,9 @@
     position: fixed;
   }
 
-  html {
+  /* html {
     margin: 0px;
     height: 100vh;
     min-height: 100%;
-  }
+  } */
 }
-
-
-
