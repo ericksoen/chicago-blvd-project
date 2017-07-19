@@ -1,10 +1,16 @@
 /deep/ .mat-input-placeholder {
   color: #fff;
-  font-size: 2em;
 }
 
-/deep/ .mat-input-element {
-  font-size: 4em;
+/deep/ .mat-input-wrapper {
+  font-size: 1.2em !important;
+  font-weight: bold;
+}
+
+.user-signup {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  color: #fff;
 }
 
 /deep/ button.mat-fab.mat-primary {
@@ -15,9 +21,13 @@
   background-color: rgba(143,145,147, 0.6);
 }
 
+/deep/ .mat-input-subscript-wrapper {
+  font-size: 1.2em !important;
+}
+
 h1, li, p {
   font-family: Poppins;
-  color: #DCDBDB;
+  color: white;
 }
 
 h1 {
@@ -274,6 +284,7 @@ input:-webkit-autofill {
     color: #337ab7;
     height: 60px;
     margin: 0px;
+    font-size: 3.0em;
   }
 
   .info {
