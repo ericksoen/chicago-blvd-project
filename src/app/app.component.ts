@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SignupService } from './core';
+import { SignupService, DOMEvents } from './core';
 import { FormControl, Validators } from '@angular/forms';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -18,13 +18,20 @@ export class AppComponent {
   emailFormControl = new FormControl('', [Validators.required, Validators.pattern(EMAIL_REGEX)]);
   isEmailSuccess: boolean;
 
-  constructor(private signupService: SignupService, public router: Router) {
+  constructor(
+    private signupService: SignupService,
+    public router: Router,
+    public domEvents: DOMEvents
+  ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         ga('set', 'page', event.urlAfterRedirects);
         ga('send', 'pageview');
       }
     });
+
+    // Set 2000ms timeout to allow mobile devices time to load background content
+    setTimeout(() => domEvents.triggerOnDocument('appready'), 2000);
    }
 
   public submitEmail(): void {
