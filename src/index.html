@@ -11,11 +11,58 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!--link rel="stylesheet" href="./theme.scss"-->
 </head>
 <body>
   <div class="overlay">
-  <app-root>Loading...</app-root>
+  <app-root>
+
+      <!-- Can't use application's .css files since this needs to fire pre-bootstrap -->
+        <style type="text/css">
+            #pre-bootstrap {
+                background-color: rgba(129, 160, 208, 0.60);
+                bottom: 0px ;
+                left: 0px ;
+                position: fixed ;
+                right: 0px ;
+                top: 0px ;
+                z-index: 999999 ;
+            }
+            #pre-bootstrap div.messaging {
+                color: #FFFFFF ;
+                font-family: Poppins ;
+                left: 0px ;
+                margin-top: -37px ;
+                position: absolute ;
+                right: 0px ;
+                text-align: center ;
+                top: 50% ;
+            }
+            #pre-bootstrap h1 {
+                font-size: 26px ;
+                line-height: 35px ;
+                margin: 0px 0px 20px 0px ;
+            }
+            #pre-bootstrap p {
+                font-size: 18px ;
+                line-height: 14px ;
+                margin: 0px 0px 0px 0px ;
+            }
+        </style>
+
+        <div id="pre-bootstrap">
+            <div class="messaging">
+
+                <h1>
+                    It's a marathon, not a sprint.
+                </h1>
+
+                <p>
+                    Please stand by while we load project details.
+                </p>
+
+            </div>
+        </div>
+  </app-root>
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
