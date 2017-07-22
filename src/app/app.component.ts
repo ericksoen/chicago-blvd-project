@@ -12,10 +12,12 @@ const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   title = 'The Chicago Boulevards Project!';
   email: string;
-  emailFormControl = new FormControl('', [Validators.required, Validators.pattern(EMAIL_REGEX)]);
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.pattern(EMAIL_REGEX)
+  ]);
   isEmailSuccess: boolean;
 
   constructor(
@@ -30,16 +32,16 @@ export class AppComponent {
       }
     });
 
-    // Set 2000ms timeout to allow mobile devices time to load background content
-    setTimeout(() => domEvents.triggerOnDocument('appready'), 2000);
-   }
+    // Display splash screen to allow mobile devices on slow connection time to bootstrap app
+    setTimeout(() => domEvents.triggerOnDocument('appready'), 20000);
+  }
 
   public submitEmail(): void {
-    this.signupService.AddEmail(this.email)
+    this.signupService
+      .AddEmail(this.email)
       .subscribe(
-        success => this.isEmailSuccess = true,
+        success => (this.isEmailSuccess = true),
         error => console.log(error)
       );
   }
-
 }
