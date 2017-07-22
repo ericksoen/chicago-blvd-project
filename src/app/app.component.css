@@ -110,11 +110,8 @@ input:-webkit-autofill {
     justify-content: center;
   }
 
-  .route-map {
-    background-image: url("./../assets/blvd-map-chicago-colors-transparent-names.png");
-    height: 250px;
-    width: 250px;
-    alt: "Course map";
+  .route-map img {
+    width: 75%;
   }
 
   .flex .route-map {
@@ -182,11 +179,8 @@ input:-webkit-autofill {
     justify-content: center;
   }
 
-  .route-map {
-    background-image: url("./../assets/blvd-map-chicago-colors-transparent-names.png");
-    height: 500px;
-    width: 500px;
-    alt: "Course map";
+  .route-map img {
+    width: 75%;
   }
 
   .flex .route-map {
@@ -205,11 +199,9 @@ input:-webkit-autofill {
     width: 100%;
   }
 
-  .route-map {
-    background-image: url("./../assets/blvd-map-chicago-colors-transparent-names.png");
-    height: 550px;
-    width: 550px;
+  .route-map img {
     margin-top: 50px;
+    width: 60%;
   }
 
   li {
