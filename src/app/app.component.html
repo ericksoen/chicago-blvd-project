@@ -21,7 +21,7 @@
         <li>Enter your email to receive project updates</li>
       </ul>
       <form class="user-signup">
-        <md-input-container>
+        <md-input-container class="email">
           <input class="long-input" mdInput placeholder="Email" [formControl]="emailFormControl" [(ngModel)]="email" name="email">
           <md-error *ngIf="emailFormControl.hasError('required')">
             This field is required
