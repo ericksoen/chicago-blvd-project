@@ -58,7 +58,7 @@
 
       <style type="text/css">
         #pre-bootstrap {
-          background-color: #b3ddf2;
+          background-color: #FFF;
           bottom: 0px;
           left: 0px;
           opacity: 1.0;
@@ -68,36 +68,55 @@
           transition: all linear 250ms;
           -webkit-transition: all linear 250ms;
           z-index: 999999;
+          display: flex;
+          flex-direction: column;
         }
 
         #pre-bootstrap.loaded {
           opacity: 0.0;
         }
 
+        #pre-bootstrap .messaging {
+          flex: 8;
+        }
+
         #pre-bootstrap div.messaging {
-          color: #FFF;
+          color: #FF0000;
           font-family: Poppins;
           left: 0px;
-          margin-top: -37px;
-          position: absolute;
           right: 0px;
           text-align: center;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
           top: 50%;
         }
 
         #pre-bootstrap h1 {
-          font-size: 26px;
+          font-size: 36px;
+          font-weight: bold;
           line-height: 35px;
           margin: 0px 0px 20px 0px;
         }
 
         #pre-bootstrap p {
-          font-size: 18px;
+          font-size: 24px;
           margin: 0px 0px 0px 0px;
         }
-      </style>
 
+        #pre-bootstrap .chicago-blue-top {
+          background-color: #b3ddf2;
+          flex: 2;
+        }
+
+        #pre-bootstrap .chicago-blue-bottom {
+          background-color: #b3ddf2;
+          flex: 2;
+        }
+      </style>
       <div id="pre-bootstrap">
+        <div class="chicago-blue-top"></div>
         <div class="messaging">
 
           <h1>
@@ -109,6 +128,7 @@
           </p>
 
         </div>
+        <div class="chicago-blue-bottom"></div>
       </div>
 
     </div>
