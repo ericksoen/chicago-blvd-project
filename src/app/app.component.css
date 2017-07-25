@@ -1,10 +1,16 @@
 /deep/ .mat-input-placeholder {
   color: #fff;
-  font-size: 2em;
 }
 
-/deep/ .mat-input-element {
-  font-size: 4em;
+/deep/ .mat-input-wrapper {
+  font-size: 1.2em !important;
+  font-weight: bold;
+}
+
+.user-signup {
+  font-size: 1.2em !important;
+  font-weight: bold;
+  color: #fff;
 }
 
 /deep/ button.mat-fab.mat-primary {
@@ -12,12 +18,18 @@
 }
 /deep/ button.mat-fab.mat-primary[disabled] {
   color: #fff;
-  background-color: rgba(143,145,147, 0.6);
+  background-color: rgba(143, 145, 147, 0.6);
 }
 
-h1, li, p {
+/deep/ .mat-input-subscript-wrapper {
+  font-size: 1.2em !important;
+}
+
+h1,
+li,
+p {
   font-family: Poppins;
-  color: #DCDBDB;
+  color: white;
 }
 
 h1 {
@@ -26,7 +38,7 @@ h1 {
 }
 
 .info {
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .route-map {
@@ -49,28 +61,29 @@ input:-webkit-autofill {
     width: 100%;
   }
   h1 {
-   margin-top: 10px;
-   margin-left: 20px;
-   font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.3em;
   }
 
   .info {
     height: 60px;
     text-align: left;
     margin-bottom: 0px;
-    background-color: #FFF;
+    background-color: #fff;
   }
 
   li {
     list-style-image: url("./../resources/western-star-clip-art-clipart-red-star-d2db-18px.png");
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: bold;
   }
 
-  .run-details, .user-signup {
-      margin: 20px;
+  .run-details,
+  .user-signup {
+    margin: 20px;
   }
 
   .flex-header {
@@ -97,19 +110,35 @@ input:-webkit-autofill {
     justify-content: center;
   }
 
-  .route-map {
-    background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
-    height: 250px;
-    width: 250px;
-    alt: "Course map";
+  .route-map img {
+    width: 75%;
   }
 
   .flex .route-map {
-    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px 40px 0px;
   }
 
   .long-input {
-    width: 175px;
+    width: 250px;
+  }
+
+  .flex .user-signup {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0px 0px 20px;
+  }
+
+  .flex .user-signup button {
+    align-items: flex-start;
+  }
+
+  .user-signup {
+    font-size: 0.9em !important;
+    font-weight: bold;
+    color: #fff;
   }
 }
 
@@ -120,16 +149,16 @@ input:-webkit-autofill {
     width: 100%;
   }
   h1 {
-   margin-top: 10px;
-   margin-left: 20px;
-   font-size: 1.2em;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.5em;
   }
 
   .info {
     height: 60px;
     text-align: left;
     margin-bottom: 0px;
-    background-color: #FFF;
+    background-color: #fff;
   }
 
   li {
@@ -140,8 +169,9 @@ input:-webkit-autofill {
     font-weight: bold;
   }
 
-  .run-details, .user-signup {
-      margin: 20px;
+  .run-details,
+  .user-signup {
+    margin: 20px;
   }
 
   .flex-header {
@@ -168,35 +198,40 @@ input:-webkit-autofill {
     justify-content: center;
   }
 
-  .route-map {
-    background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
-    height: 500px;
-    width: 500px;
-    alt: "Course map";
+  .route-map img {
+    width: 75%;
   }
 
   .flex .route-map {
     align-self: center;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .flex .user-signup {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px 20px 20px;
+  }
+
+  .flex .user-signup button {
+    align-items: flex-start;
   }
 
   .long-input {
-    width: 250px;
+    width: 325px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-
   .content {
     position: absolute;
     height: 100%;
     width: 100%;
   }
 
-  .route-map {
-    background-image: url(./../resources/blvd-map-best-start-finish-park-names-min.png);
-    height: 550px;
-    width: 550px;
+  .route-map img {
     margin-top: 50px;
+    width: 60%;
   }
 
   li {
@@ -246,7 +281,6 @@ input:-webkit-autofill {
     justify-content: flex-end;
     flex: 2;
     margin-top: 5px;
-
   }
 
   .flex-details {
@@ -264,8 +298,9 @@ input:-webkit-autofill {
     justify-content: center;
   }
 
-  .run-details, .user-signup {
-      margin: 20px;
+  .run-details,
+  .user-signup {
+    margin: 20px;
   }
 
   h1 {
@@ -274,12 +309,25 @@ input:-webkit-autofill {
     color: #337ab7;
     height: 60px;
     margin: 0px;
+    font-size: 3.0em;
   }
 
   .info {
     height: 75px;
     text-align: left;
     margin-bottom: 0px;
+  }
+
+  .flex .user-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 30px 0px 20px 20px;
+  }
+
+  .flex .user-signup button {
+    align-items: flex-start;
+    margin: 10px 10px 10px 10px;
   }
 
   .long-input {

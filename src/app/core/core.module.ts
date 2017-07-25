@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ErrorHandlerService } from './error-handler-service';
 import { SignupService } from './signup-service';
+import { DOMEvents } from './DOMEvents';
 
 @NgModule({
     imports: [
@@ -11,7 +12,8 @@ import { SignupService } from './signup-service';
     ],
     providers: [
         ErrorHandlerService,
-        SignupService
+        SignupService,
+        DOMEvents
     ]
 })
 export class CoreModule { }

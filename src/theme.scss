@@ -3,9 +3,12 @@
 @include mat-core();
 
 //mat-pallete accepts $palette-name, main, lighter and darker variants
-$my-app-primary: mat-palette($mat-green, 300, 100, 800);
-$my-app-accent: mat-palette($mat-orange, 300, 100, 700);
-$my-app-warn: mat-palette($mat-deep-orange, 300, 100, 500);
+
+// TODO: Variants may create accessibility issue against certain backgrounds. Override main,
+// lighter, and darker variants to prevent iussue.
+$my-app-primary: mat-palette($mat-light-green, 900, 700, 700);
+$my-app-accent: mat-palette($mat-orange, 100, 100, 100);
+$my-app-warn: mat-palette($mat-deep-orange, 100, 100, 100);
 
 $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
 
