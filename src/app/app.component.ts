@@ -33,7 +33,7 @@ export class AppComponent {
     });
 
     // Display splash screen to allow mobile devices on slow connection time to bootstrap app
-    setTimeout(() => domEvents.triggerOnDocument('appready'), 2000);
+    setTimeout(() => domEvents.triggerOnDocument('appready'), 3000);
   }
 
   public submitEmail(): void {
