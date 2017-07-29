@@ -7,6 +7,10 @@
   font-weight: bold;
 }
 
+/deep/ .mat-input-underline {
+  height: 3px !important;
+  background-color: #b3ddf2;
+}
 .user-signup {
   font-size: 1.2em !important;
   font-weight: bold;
