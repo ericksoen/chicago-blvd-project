@@ -20,7 +20,7 @@ body {
 
 @media (min-width: 300px) {
   body {
-    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline_2000px.jpg");
+    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline_2000px-min.jpg");
   }
 
   .overlay {
@@ -31,7 +31,7 @@ body {
 
 @media (min-width: 480px) {
   body {
-    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline_2000px.jpg");
+    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline_2000px-min.jpg");
   }
 
   .overlay {
@@ -42,7 +42,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline.jpg");
+    background-image: url("./assets/ferdinand-stohr-176623-chicago-skyline-min.jpg");
   }
 
   .overlay {
