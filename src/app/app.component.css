@@ -10,7 +10,9 @@
 /deep/ .mat-input-underline {
   height: 3px !important;
   background-color: #b3ddf2;
+  width: 95% !important;
 }
+
 .user-signup {
   font-size: 1.2em !important;
   font-weight: bold;
@@ -336,5 +338,8 @@ input:-webkit-autofill {
 
   .long-input {
     width: 400px;
+  }
+  .mat-input-underline {
+    width: 400px !important;
   }
 }
