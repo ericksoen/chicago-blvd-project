@@ -10,7 +10,6 @@
 /deep/ .mat-input-underline {
   height: 3px !important;
   background-color: #b3ddf2;
-  width: 95% !important;
 }
 
 .user-signup {
@@ -22,6 +21,7 @@
 /deep/ button.mat-fab.mat-primary {
   color: #fff;
 }
+
 /deep/ button.mat-fab.mat-primary[disabled] {
   color: #fff;
   background-color: rgba(143, 145, 147, 0.6);
@@ -127,10 +127,9 @@ input:-webkit-autofill {
     margin: 20px 0px 40px 0px;
   }
 
-  .long-input {
+  .mat-input-container {
     width: 250px;
   }
-
   .flex .user-signup {
     display: flex;
     flex-direction: column;
@@ -223,8 +222,8 @@ input:-webkit-autofill {
     align-items: flex-start;
   }
 
-  .long-input {
-    width: 325px;
+  .mat-input-container {
+    width: 300px;
   }
 }
 
@@ -336,7 +335,7 @@ input:-webkit-autofill {
     margin: 10px 10px 10px 10px;
   }
 
-  .long-input {
+  .mat-input-container {
     width: 400px;
   }
   .mat-input-underline {
